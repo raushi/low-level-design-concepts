@@ -37,23 +37,78 @@ class ReportGeneration {
     }
 }
 
-class ReportPrinter {
-    public print(report: ReportGeneration): void {
-        console.log(`The title of Report is ${report.title} and content is ${report.content}`);
+interface Exporter {
+    export(report: ReportGeneration): void;
+}
+
+interface Printer {
+    print(report: ReportGeneration): void;
+}
+
+
+class ReportPDFExporter implements Exporter {
+    export(report: ReportGeneration): void {
+        console.log(`Exporting to PDF: ${report.title}`);
     }
 }
 
-class ReportExporter {
-    public exportToPDF(report: ReportGeneration): void {
-        console.log(`The report with the title ${report.title} has been exported to PDF`);
+class ReportWordExporter implements Exporter {
+    export(report: ReportGeneration): void {
+        console.log(`Exporting to Word: ${report.title}`);
     }
 }
+
+class PlainTextPrinter implements Printer {
+    print(report: ReportGeneration): void {
+        console.log(`Plain Text Print: ${report.title} - ${report.content}`);
+    }
+}
+
+class HTMLReportPrinter implements Printer {
+    print(report: ReportGeneration): void {
+        console.log(`<html><head><title>${report.title}</title></head><body>${report.content}</body></html>`);
+    }
+}
+
+
+class ReportService {
+    private printer: Printer;
+    private exporter: Exporter;
+
+    // Inject printer and exporter at runtime
+    constructor(printer: Printer, exporter: Exporter) {
+        this.printer = printer;
+        this.exporter = exporter;
+    }
+
+    // Method to print the report
+    printReport(report: ReportGeneration): void {
+        this.printer.print(report);
+    }
+
+    // Method to export the report
+    exportReport(report: ReportGeneration): void {
+        this.exporter.export(report);
+    }
+}
+
 
 // Usage:
 
 const report = new ReportGeneration("Monthly Sales", "Sales increased by 20% compared to last month.");
-const printer = new ReportPrinter();
-const exporter = new ReportExporter();
 
-printer.print(report);
-exporter.exportToPDF(report);
+// Create the concrete printer and exporter
+const htmlPrinter = new HTMLReportPrinter();
+const pdfExporter = new ReportPDFExporter();
+
+// Inject dependencies and use the system
+const reportService = new ReportService(htmlPrinter, pdfExporter);
+
+reportService.printReport(report);  // Prints in HTML format
+reportService.exportReport(report);  // Exports to PDF
+
+// Later, you can swap to different classes without modifying ReportService:
+const wordExporter = new ReportWordExporter();
+
+const reportService1 = new ReportService(htmlPrinter, wordExporter);
+reportService1.exportReport(report);  // Exports to Word now
