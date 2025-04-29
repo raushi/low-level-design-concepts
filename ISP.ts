@@ -1,8 +1,6 @@
 // Interface Segregation Principle
 // Client should not be forced to depend on interfaces they don't use
 
-import { stat } from "fs";
-
 /*
     🛠️ Your Problem Setup:
         Domain: SmartAppliance
