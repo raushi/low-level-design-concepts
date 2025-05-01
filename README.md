@@ -80,6 +80,8 @@ It’s better to have many small, specific interfaces than one large general-pur
 
 ---
 
+# 🔷 Design Patterns
+
 | Category              | Example Patterns                               | Goal                            |
 |-----------------------|------------------------------------------------|---------------------------------|
 | **Creational Patterns**   | Singleton, Factory, Builder, Prototype         | How objects are created         |
