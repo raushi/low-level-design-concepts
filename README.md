@@ -1,3 +1,34 @@
+# 🔷 Folder Structure
+## 📁 design_patterns
+
+### 📂 behavioural
+- `chain_of_responsibility.ts`
+
+### 📂 creational
+- `abstract.ts`
+- `builder.ts`
+- `factory.ts`
+- `prototype.ts`
+- `singleton.ts`
+
+### 📂 structural
+- `adapter.ts`
+- `bridge.ts`
+- `composite.ts`
+- `decorator.ts`
+- `facade.ts`
+- `flyweight.ts`
+- `proxy.ts`
+
+### 📂 principles
+- `DIP.ts`
+- `ISP.ts`
+- `LSP.ts`
+- `OCP.ts`
+- `SRP.ts`
+
+---
+
 # 🔷 SOLID Principles
 
 **SOLID** is an acronym for five design principles in object-oriented programming that help developers write cleaner, more maintainable, and scalable code.
