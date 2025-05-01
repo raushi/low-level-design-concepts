@@ -20,7 +20,7 @@
 - `flyweight.ts`
 - `proxy.ts`
 
-### 📂 principles
+## 📂 principles
 - `DIP.ts`
 - `ISP.ts`
 - `LSP.ts`
