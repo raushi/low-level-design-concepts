@@ -2,47 +2,47 @@
 ## 📁 design_patterns
 
 ### 📂 behavioural
-- `chain_of_responsibility.ts`
-- `command.ts`
-- `interpreter.ts`
-- `iterator.ts`
-- `mediator.ts`
-- `memento.ts`
-- `observer.ts`
-- `state.ts`
-- `strategy.ts`
-- `template_method.ts`
-- `visitor.ts`
+- [chain_of_responsibility.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/behavioural/chain_of_responsibility.ts)
+- [command.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/behavioural/command.ts)
+- [iterator.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/behavioural/iterator.ts)
+- [mediator.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/behavioural/mediator.ts)
+- [memento.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/behavioural/memento.ts)
+- [observer.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/behavioural/observer.ts)
+- [state.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/behavioural/state.ts)
+- [strategy.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/behavioural/strategy.ts)
+- [template.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/behavioural/template.ts)
+- [visitor.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/behavioural/visitor.ts)
 
 ### 📂 creational
-- `abstract.ts`
-- `builder.ts`
-- `factory.ts`
-- `prototype.ts`
-- `singleton.ts`
+- [abstract.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/creational/abstract.ts)
+- [builder.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/creational/builder.ts)
+- [factory.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/creational/factory.ts)
+- [prototype.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/creational/prototype.ts)
+- [singleton.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/creational/singleton.ts)
 
 ### 📂 structural
-- `adapter.ts`
-- `bridge.ts`
-- `composite.ts`
-- `decorator.ts`
-- `facade.ts`
-- `flyweight.ts`
-- `proxy.ts`
+- [adapter.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/structural/adapter.ts)
+- [bridge.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/structural/bridge.ts)
+- [composite.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/structural/composite.ts)
+- [decorator.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/structural/decorator.ts)
+- [facade.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/structural/facade.ts)
+- [flyweight.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/structural/flyweight.ts)
+- [proxy.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/structural/proxy.ts)
 
 ### 📂 resilience
-- `bulkhead.ts`
-- `circuit_breaker.ts`
-- `fallback.ts`
-- `retry.ts`
-- `timeout.ts`
+- [circuit_breaker.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/resilience/circuit_breaker.ts)
+- [fallback.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/resilience/fallback.ts)
+- [retry.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/resilience/retry.ts)
+- [timeout.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/resilience/timeout.ts)
+- [rate_limiter.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/resilience/rate_limiter.ts)
+- [bulkhead.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/resilience/bulkhead.ts)
 
 ## 📂 principles
-- `DIP.ts`
-- `ISP.ts`
-- `LSP.ts`
-- `OCP.ts`
-- `SRP.ts`
+- [DIP.ts](https://github.com/raushi/low-level-design-concepts/blob/main/principles/DIP.ts)
+- [ISP.ts](https://github.com/raushi/low-level-design-concepts/blob/main/principles/ISP.ts)
+- [LSP.ts](https://github.com/raushi/low-level-design-concepts/blob/main/principles/LSP.ts)
+- [OCP.ts](https://github.com/raushi/low-level-design-concepts/blob/main/principles/OCP.ts)
+- [SRP.ts](https://github.com/raushi/low-level-design-concepts/blob/main/principles/SRP.ts)
 
 ---
 
