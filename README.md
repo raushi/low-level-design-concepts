@@ -30,6 +30,13 @@
 - `flyweight.ts`
 - `proxy.ts`
 
+### 📂 resilience
+- `bulkhead.ts`
+- `circuit_breaker.ts`
+- `fallback.ts`
+- `retry.ts`
+- `timeout.ts`
+
 ## 📂 principles
 - `DIP.ts`
 - `ISP.ts`
@@ -262,4 +269,49 @@ Captures and externalizes an object's internal state without violating encapsula
 ---
 
 Behavioral patterns help you **organize interactions** between objects in a flexible, maintainable, and scalable way.
+
+---
+
+# 🔷 What are Resilience Patterns?
+
+**Resilience patterns** are software design strategies that help systems stay responsive, stable, and fault-tolerant under stress, failure, or unexpected load.  
+These patterns focus on ensuring **graceful degradation**, **fault isolation**, and **recoverability** when parts of the system fail.
+
+They are especially critical in **distributed systems and cloud-native architectures**, where failures are inevitable.
+
+## Common Resilience Patterns:
+
+### 🔹 Retry
+Retries a failed operation a fixed number of times before giving up.  
+🔧 **Use when**: You expect **transient failures** like network glitches or temporary service outages.
+
+### 🔹 Circuit Breaker
+Prevents repeated failed calls to a service by "breaking" the connection temporarily.  
+🔧 **Use when**: You want to **stop cascading failures** and give downstream services time to recover.
+
+### 🔹 Timeout
+Limits how long the system waits for an operation before aborting it.  
+🔧 **Use when**: You want to prevent **system hangs or long delays** caused by unresponsive components.
+
+### 🔹 Fallback
+Provides an alternative response or action when the primary one fails.  
+🔧 **Use when**: You want to **gracefully degrade** functionality and avoid user-facing errors.
+
+### 🔹 Rate Limiter
+Restricts the number of requests a user or client can make in a given time period.  
+🔧 **Use when**: You need to **protect shared resources** and prevent abuse or spikes in traffic.
+
+### 🔹 Leaky Bucket / Token Bucket
+Algorithms for managing request bursts while maintaining an average rate.  
+🔧 **Use when**: You want to **smooth out traffic** or handle **bursty loads gracefully**.
+
+### 🔹 Bulkhead
+Isolates different parts of a system into compartments to contain failures.  
+🔧 **Use when**: You want to **prevent a failure in one service from taking down the whole system**.
+
+---
+
+Resilience patterns are essential for building **robust, fault-tolerant**, and **highly available** systems, especially in distributed or microservices-based architectures.
+
+---
 
