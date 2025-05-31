@@ -34,7 +34,7 @@
 - [fallback.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/resilience/fallback.ts)
 - [retry.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/resilience/retry.ts)
 - [timeout.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/resilience/timeout.ts)
-- [rate_limiter.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/resilience/rate_limiter.ts)
+- [rate_limit.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/resilience/rate_limit.ts)
 - [bulkhead.ts](https://github.com/raushi/low-level-design-concepts/blob/main/design_patterns/resilience/bulkhead.ts)
 
 ## 📂 principles
