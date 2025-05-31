@@ -3,6 +3,16 @@
 
 ### 📂 behavioural
 - `chain_of_responsibility.ts`
+- `command.ts`
+- `interpreter.ts`
+- `iterator.ts`
+- `mediator.ts`
+- `memento.ts`
+- `observer.ts`
+- `state.ts`
+- `strategy.ts`
+- `template_method.ts`
+- `visitor.ts`
 
 ### 📂 creational
 - `abstract.ts`
