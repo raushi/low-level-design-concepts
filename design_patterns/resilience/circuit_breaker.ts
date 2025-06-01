@@ -84,7 +84,7 @@ async function unreliableService() {
 async function makeRequest() {
     for (let i = 0; i <= 20; i++) {
         if (i%5 === 0) {
-            failToggle = true; // toggle failure every 3 requests
+            failToggle = true; // toggle failure every 5 requests
         }
         try {
             const result = await circuitBreaker.call(unreliableService);
