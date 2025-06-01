@@ -41,13 +41,16 @@ class MediaAdapter implements MediaPlayer {
 }
 
 class AudioPlayer implements MediaPlayer {
-    private adapter?: MediaAdapter;
+    private adapter: MediaAdapter;
+
+    constructor(adapter: MediaAdapter) {
+        this.adapter = adapter;
+    }
 
     play(audioType: string, fileName: string): void {
         if (audioType === "mp3") {
             console.log(`Playing mp3 file: ${fileName}`);
         } else if (audioType === "vlc" || audioType === "mp4") {
-            this.adapter = new MediaAdapter();
             this.adapter.play(audioType, fileName);
         } else {
             console.log(`Invalid media type: ${audioType}`);
@@ -55,7 +58,8 @@ class AudioPlayer implements MediaPlayer {
     }
 }
 
-const player = new AudioPlayer();
+const mediaAdapter = new MediaAdapter();
+const player = new AudioPlayer(mediaAdapter);
 
 player.play("mp3", "song.mp3");
 player.play("mp4", "video.mp4");
